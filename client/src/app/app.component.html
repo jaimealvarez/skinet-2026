@@ -1,1 +1,9 @@
-<h1 class="text-3xl fond-bold underline">Welcome to the {{title}}</h1>
+<app-header></app-header>
+
+<div>
+    <ul class="container mt-6">
+       @for (product of products; track product.id) {
+        <li>{{product.name}}</li>
+       } 
+    </ul>
+</div>
